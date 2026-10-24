@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Computer science student and software developer portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="mono-mark" data-cfg="initials">LN</div>
+      <p>Loading portfolio...</p>
+      <div class="bar"><span></span></div>
+      <button id="skip-load" type="button">Skip</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav aria-label="Main">
+      <a class="brand" href="#hero" data-cfg="initials">LN</a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#repos">Repositories</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="beam" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="meta" data-cfg="role">Computer Science Student &amp; Software Developer</p>
+          <h1 data-cfg="name">
+            <div Laxminarayan="" Mohanta=""></div>
+          </h1>
+          <p class="lead">I build practical software with C++, Python, databases, and a curiosity for how systems work
+            behind the scenes.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" data-cfg-href="cvPath" href="assets/cv/resume.pdf" download>Download CV</a>
+            <a class="btn" data-cfg-href="githubUrl" href="https://github.com/BUTUISCOOL25" target="_blank"
+              rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <img class="portrait" src="assets/images/profile.svg" width="800" height="600"
+          alt="Portrait of the portfolio owner (replace with your photo)">
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">Scroll</a>
+    </section>
+
+    <section id="about" class="wrap split">
+      <div>
+        <h2>About me</h2>
+        <p>I’m a computer science student who enjoys building practical software, working with databases, and learning
+          how things work behind the scenes. My current focus is strengthening my programming fundamentals while turning
+          ideas into useful projects.</p>
+        <dl class="facts">
+          <div>
+            <dt>Education</dt>
+            <dd>B.Sc(hons.) in Mathematics and Computing</dd>
+          </div>
+          <div>
+            <dt>Learning</dt>
+            <dd>Data structures, algorithms, SQL</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Bhubaneshwar, India</dd>
+          </div>
+        </dl>
+      </div>
+      <img src="assets/images/about.svg" width="800" height="600" loading="lazy"
+        alt="Secondary photo of the portfolio owner (replace with your photo)">
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <article class="card" tabindex="0">
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Databases</h3>
+          <ul class="tags">
+            <li>MySQL</li>
+            <li>SQLite</li>
+          </ul>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Core concepts</h3>
+          <ul class="tags">
+            <li>Data Structures &amp; Algorithms</li>
+          </ul>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Tools</h3>
+          <ul class="tags">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>CMake</li>
+            <li>MSYS2/MinGW</li>
+          </ul>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Frameworks</h3>
+          <ul class="tags">
+            <li>Qt</li>
+          </ul>
+        </article>
+        <article class="card" tabindex="0">
+          <h3>Creative tools</h3>
+          <ul class="tags">
+            <li>DaVinci Resolve</li>
+            <li>Video editing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2>Featured projects</h2>
+      <div class="proj-grid">
+        <article class="card proj">
+          <div class="thumb"><img src="assets/images/p1.svg" width="800" height="600" loading="lazy"
+              alt="Student Management System screenshot placeholder"></div>
+          <div class="body">
+            <h3>Student Management System</h3>
+            <p>A practical student record management application with add, search, edit, delete, and reporting features.
+            </p>
+            <ul class="tags">
+              <li>C++</li>
+              <li>SQLite</li>
+            </ul><a class="btn" data-repo="student-management-system" href="https://github.com/YOUR_USERNAME"
+              target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb"><img src="assets/images/p2.svg" width="800" height="600" loading="lazy"
+              alt="Fingerprint Access Management screenshot placeholder"></div>
+          <div class="body">
+            <h3>Fingerprint Access Management</h3>
+            <p>A student data and access logging project focused on structured records, file handling, and
+              database-oriented workflows.</p>
+            <ul class="tags">
+              <li>C++</li>
+            </ul><a class="btn" data-repo="fingerprint-access-management" href="https://github.com/YOUR_USERNAME"
+              target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb"><img src="assets/images/p3.svg" width="800" height="600" loading="lazy"
+              alt="Calendar Application screenshot placeholder"></div>
+          <div class="body">
+            <h3>Calendar Application</h3>
+            <p>A calendar utility covering date calculations, leap-year logic, calendar display, and persistent file
+              storage.</p>
+            <ul class="tags">
+              <li>C</li>
+            </ul><a class="btn" data-repo="calendar-application" href="https://github.com/YOUR_USERNAME" target="_blank"
+              rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="card proj">
+          <div class="thumb"><img src="assets/images/p4.svg" width="800" height="600" loading="lazy"
+              alt="Two-Player Board Game screenshot placeholder"></div>
+          <div class="body">
+            <h3>Two-Player Board Game</h3>
+            <p>A console-based game with interactive input, board handling, and turn-based game logic.</p>
+            <ul class="tags">
+              <li>C</li>
+            </ul><a class="btn" data-repo="two-player-board-game" href="https://github.com/YOUR_USERNAME"
+              target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="repos" class="wrap">
+      <h2>All GitHub repositories</h2>
+      <div class="filters" role="group" aria-label="Filter repositories by language"></div>
+      <div id="repo-status" role="status" aria-live="polite">Loading repositories...</div>
+      <div id="repo-grid" class="repo-grid"></div>
+      <p><a class="btn" data-cfg-href="githubUrl" href="https://github.com/YOUR_USERNAME" target="_blank"
+          rel="noopener">View GitHub Profile</a></p>
+    </section>
+
+    <section id="gallery" class="wrap">
+      <h2>Gallery</h2>
+      <ul class="gallery">
+        <li><button type="button" data-full="assets/images/gallery/g1.svg" data-cap="Project screenshot"><img
+              src="assets/images/gallery/g1.svg" width="800" height="600" loading="lazy"
+              alt="Project screenshot placeholder"></button></li>
+        <li><button type="button" data-full="assets/images/gallery/g2.svg" data-cap="Coding setup"><img
+              src="assets/images/gallery/g2.svg" width="800" height="600" loading="lazy"
+              alt="Coding setup placeholder"></button></li>
+        <li><button type="button" data-full="assets/images/gallery/g3.svg" data-cap="College event"><img
+              src="assets/images/gallery/g3.svg" width="800" height="600" loading="lazy"
+              alt="College event placeholder"></button></li>
+        <li><button type="button" data-full="assets/images/gallery/g4.svg" data-cap="Video editing work"><img
+              src="assets/images/gallery/g4.svg" width="800" height="600" loading="lazy"
+              alt="Video editing placeholder"></button></li>
+        <li><button type="button" data-full="assets/images/gallery/g5.svg" data-cap="Terminal session"><img
+              src="assets/images/gallery/g5.svg" width="800" height="600" loading="lazy"
+              alt="Terminal session placeholder"></button></li>
+        <li><button type="button" data-full="assets/images/gallery/g6.svg" data-cap="Study notes"><img
+              src="assets/images/gallery/g6.svg" width="800" height="600" loading="lazy"
+              alt="Study notes placeholder"></button></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Let’s build something useful.</h2>
+      <div class="actions">
+        <a class="btn primary" data-cfg-href="email" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+        <a class="btn" data-cfg-href="githubUrl" href="https://github.com/YOUR_USERNAME" target="_blank"
+          rel="noopener">GitHub</a>
+        <a class="btn" data-cfg-href="linkedinUrl" href="https://www.linkedin.com/in/YOUR_PROFILE/" target="_blank"
+          rel="noopener">LinkedIn</a>
+        <a class="btn" data-cfg-href="cvPath" href="assets/cv/resume.pdf" download>Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>© <span id="year"></span> <span data-cfg="name">[Your Name]</span></p><a href="#hero">Back to top</a>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Image viewer">
+    <figure><img alt="">
+      <figcaption></figcaption>
+    </figure><button type="button" id="lb-close" aria-label="Close image">Close</button>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/github.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <!-- EXTENSION POINT: add js/animations.js (GSAP) in a later milestone, and an optional Three.js hero layer after that. -->
+</body>
+
+</html>
