@@ -5,8 +5,8 @@ const portfolioConfig = {
   role: 'Computer Science Student & Software Developer',
   githubUsername: 'BUTUISCOOL25',
   githubUrl: 'https://github.com/BUTUISCOOL25',
-  linkedinUrl: 'https://www.linkedin.com/in/YOUR_PROFILE/',
-  email: 'mailto:YOUR_EMAIL@example.com',
+  linkedinUrl: 'https://www.linkedin.com/in/laxminarayan-mohanta-9548371b4/',
+  email: 'mailto:lnmohanta25@gmail.com',
   cvPath: 'assets/cv/resume.pdf',
   // Repo names for the "View on GitHub" buttons in Featured projects
   featuredRepos: {
